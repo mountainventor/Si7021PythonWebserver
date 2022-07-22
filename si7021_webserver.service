@@ -1,0 +1,12 @@
+[Unit]
+Description=Si7021 Webserver
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3.7 /home/<INSERT YOUR USERNAME HERE>/si7021sensor/si7021.py
+# hint: change python3.7 to your version
+
+[Install]
+WantedBy=multi-user.target
