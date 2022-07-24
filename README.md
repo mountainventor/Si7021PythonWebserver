@@ -18,3 +18,6 @@ Website showing Si7021 temperature and relative humidity measurements. (Python, 
 - enable auto start `sudo systemctl enable si7021_webserver.service`
 - reboot `sudo reboot`
 - after reboot the service should start automatically.
+
+## Warning
+Flasks webserver is a development webserver. Use a production WSGI server for non-private networks.
