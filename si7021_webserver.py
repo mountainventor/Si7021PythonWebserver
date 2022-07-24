@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 def main():
     @app.route("/")
-    def hello_world():
+    def return_html_index():
         response = f"""
         <!doctype html>
         <html>
